@@ -2,6 +2,7 @@
   "name": "@devcomfort/text-transcoder",
   "packageManager": "yarn@3.2.3",
   "version": "0.0.1",
+  "private": false,
   "author": {
     "name": "devcomfort",
     "url": "https://github.com/devcomfort/text-transcoder"
