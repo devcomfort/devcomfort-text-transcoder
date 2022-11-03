@@ -16,8 +16,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - run: yarn set version berry
       - run: yarn install
-      - run: yarn publish --access=public --non-interactive
+      - run: yarn npm publish --access=public
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
@@ -29,5 +30,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - run: yarn set version berry
       - run: yarn install
-      - run: yarn publish --access=public --non-interactive
+      - run: yarn npm publish --access=public
