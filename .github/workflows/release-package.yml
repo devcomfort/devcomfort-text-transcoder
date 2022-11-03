@@ -19,6 +19,8 @@ jobs:
       - run: yarn set version berry
       - run: yarn install
       - run: yarn npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
