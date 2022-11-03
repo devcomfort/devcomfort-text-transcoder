@@ -18,6 +18,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: "@devcomfort"
       - run: npm i
+      - run: echo $npm_token
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
