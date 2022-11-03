@@ -7,9 +7,6 @@ on:
 jobs:
   publish-npm-registry:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -25,9 +22,6 @@ jobs:
           NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
