@@ -19,7 +19,7 @@ jobs:
       - run: yarn install
       - run: yarn publish --access=public
         - env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
@@ -34,4 +34,4 @@ jobs:
       - run: yarn install
       - run: yarn publish --access=public
         - env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
