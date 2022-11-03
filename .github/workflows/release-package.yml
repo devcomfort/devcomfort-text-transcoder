@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-          scope: "@devcomfort"
+          scope: "comfort"
       - run: npm i
       - run: npm publish
         env:
@@ -48,7 +48,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-          scope: "comfort"
+          scope: "@devcomfort"
       - run: npm i
       - run: npm publish
         env:
