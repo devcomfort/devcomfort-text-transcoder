@@ -12,5 +12,8 @@
       "import": "./src/index.mjs",
       "require": "./src/index.cjs"
     }
+  },
+  "publishConfig": {
+    "registry": "https://"
   }
 }
