@@ -7,4 +7,6 @@ import { encode, decode } from "iconv-lite";
  * @param {string} start 출발 인코딩
  * @param {string} end 끝 인코딩
  */
-export const reEncode = (str, start, end) => decode(encode(str, start), end);
+const reEncode = (str, start, end) => decode(encode(str, start), end);
+
+export { reEncode };
