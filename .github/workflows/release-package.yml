@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: yarn install
-      - run: yarn npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: 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
+      - run: npm ci
+      - run: npm publish --access=public
+        # env:
+        #   NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install
-      - run: yarn npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: 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
+      - run: npm ci
+      - run: npm publish --access=public
+        # env:
+        #   NODE_AUTH_TOKEN: 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
