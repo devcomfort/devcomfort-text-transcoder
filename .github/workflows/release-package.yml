@@ -18,10 +18,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: "@devcomfort"
       - run: npm i
-      - run: echo ${{ secrets.npm_token }}
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+          NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
