@@ -13,11 +13,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      # - run: yarn set version berry
-      # - run: yarn install
-      # - run: yarn npm publish --access=public
-      - run: npm ci
-      - run: npm publish
+      - run: yarn set version berry
+      - run: yarn install
+      - run: yarn npm publish --access=public
         env:
           NODE_AUTH_TOKEN: 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
   publish-github-registry:
@@ -28,8 +26,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      # - run: yarn set version berry
-      # - run: yarn install
-      # - run: yarn npm publish --access=public
-      - run: npm ci
-      - run: npm publish
+      - run: yarn set version berry
+      - run: yarn install
+      - run: yarn npm publish --access=public
+      # - run: npm ci
+      # - run: npm publish
