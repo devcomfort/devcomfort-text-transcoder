@@ -19,7 +19,7 @@ jobs:
       - run: npm i
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
