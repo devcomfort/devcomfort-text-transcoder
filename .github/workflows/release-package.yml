@@ -29,5 +29,3 @@ jobs:
       - run: yarn set version berry
       - run: yarn install
       - run: yarn npm publish --access=public
-      # - run: npm ci
-      # - run: npm publish
