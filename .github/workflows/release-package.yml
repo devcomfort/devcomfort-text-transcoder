@@ -17,7 +17,7 @@ jobs:
       - run: yarn install
       - run: yarn npm publish --access=public
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
     steps:
