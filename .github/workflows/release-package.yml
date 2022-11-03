@@ -18,6 +18,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn install
       - run: yarn publish --access=public
+        - with:
+          NODE_AUTH_TOKEN: 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
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
@@ -31,3 +33,4 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: yarn install
       - run: yarn publish --access=public
+        NODE_AUTH_TOKEN: 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
