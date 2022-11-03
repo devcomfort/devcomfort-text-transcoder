@@ -16,27 +16,13 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-          scope: "comfort"
-      - run: npm i
-      - run: npm publish
+          scope: "@devcomfort"
+      - run: yarn set version berry
+      - run: yarn install
+      - run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-  publish-npm-registry-test:
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-          scope: "comfort"
-      - run: npm i
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
   publish-github-registry:
     runs-on: ubuntu-latest
     permissions:
@@ -44,12 +30,13 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: "@devcomfort"
-      - run: npm i
-      - run: npm publish
+      - run: yarn set version berry
+      - run: yarn install
+      - run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
