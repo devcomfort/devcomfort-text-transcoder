@@ -1,0 +1,14 @@
+{
+  "name": "@devcomfort/text-transcoder",
+  "packageManager": "yarn@3.2.3",
+  "author": {
+    "name": "devcomfort",
+    "url": "https://github.com/devcomfort/text-transcoder"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
+  }
+}
