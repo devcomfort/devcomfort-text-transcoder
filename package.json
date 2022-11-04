@@ -9,8 +9,8 @@
   },
   "exports": {
     ".": {
-      "import": "./esm/index.mjs",
-      "require": "./cjs/index.cjs"
+      "import": "./src/esm/index.mjs",
+      "require": "./src/cjs/index.cjs"
     }
   },
   "repository": {
