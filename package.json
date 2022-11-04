@@ -24,5 +24,8 @@
   "keywords": [
     "text",
     "converter"
-  ]
+  ],
+  "devDependencies": {
+    "iconv-lite": "^0.6.3"
+  }
 }
