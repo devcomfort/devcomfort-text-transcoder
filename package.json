@@ -7,10 +7,11 @@
     "name": "devcomfort",
     "url": "https://github.com/devcomfort/text-transcoder"
   },
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./src/esm/index.mjs",
-      "require": "./src/cjs/index.cjs"
+      "import": "./index.js",
+      "require": "./index.cjs"
     }
   },
   "repository": {
