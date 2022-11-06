@@ -1,6 +1,6 @@
 {
   "name": "@devcomfort/text-transcoder",
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "pnpm@7.14.2",
   "version": "0.0.14",
   "license": "MIT",
   "author": {
