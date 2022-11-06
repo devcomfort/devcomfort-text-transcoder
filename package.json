@@ -9,10 +9,11 @@
   },
   "type": "module",
   "exports": {
-    ".": {
+    "node": {
       "import": "./index.js",
       "require": "./index.cjs"
-    }
+    },
+    "default": "./index.js"
   },
   "repository": {
     "type": "git",
