@@ -8,11 +8,6 @@
     "url": "https://github.com/devcomfort/text-transcoder"
   },
   "type": "commonjs",
-  "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build"
-  },
-  "source": "src/index.js",
   "exports": {
     ".": {
       "require": "./src/index.js"
