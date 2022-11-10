@@ -15,4 +15,4 @@ module.exports = {
 };
 
 
-//# sourceMappingURL=main.cjs.map
+//# sourceMappingURL=index.cjs.map
