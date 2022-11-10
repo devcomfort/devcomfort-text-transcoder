@@ -7,13 +7,19 @@
     "name": "devcomfort",
     "url": "https://github.com/devcomfort/text-transcoder"
   },
-  "type": "module",
+  "type": "commonjs",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "source": "index.js",
+  "main": "dist/main.cjs",
+  "module": "dist/module.mjs",
   "exports": {
-    "node": {
-      "import": "./index.js",
-      "require": "./index.cjs"
-    },
-    "default": "./index.js"
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/main.cjs"
+    }
   },
   "repository": {
     "type": "git",
@@ -28,6 +34,12 @@
     "converter"
   ],
   "dependencies": {
-    "iconv-lite": "^0.6.3"
+    "iconv-lite": "^0.6.3",
+    "string_decoder": "^1.3.0"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.0",
+    "process": "^0.11.10"
   }
 }
