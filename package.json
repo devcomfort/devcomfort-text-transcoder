@@ -3,13 +3,14 @@
   "packageManager": "pnpm@7.14.2",
   "version": "0.1.6",
   "license": "MIT",
-  "type": "commonjs",
   "exports": {
-    "default": "./src/index.js",
-    "require": "./src/index.js"
+    ".": {
+      "require": "./build/index.js",
+      "import": "./src/index.js"
+    }
   },
   "scripts": {
-    "build": "parcel build"
+    "build": "alamode src -o build --noSourceMaps"
   },
   "author": {
     "name": "devcomfort",
@@ -28,12 +29,7 @@
     "converter"
   ],
   "dependencies": {
-    "buffer": "^5.7.1",
-    "iconv-lite": "^0.6.3",
-    "process": "^0.11.10",
-    "string_decoder": "^1.3.0"
-  },
-  "devDependencies": {
-    "parcel": "^2.8.0"
+    "alamode": "^3.7.1",
+    "text-decoding": "^1.0.0"
   }
 }
