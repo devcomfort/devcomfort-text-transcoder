@@ -11,7 +11,7 @@
 
 // module.exports = { reEncode };
 
-import { TextDecoder, TextEncoder } from "text-decoding";
+const { TextDecoder, TextEncoder } = require("text-decoding");;
 
 const reEncode = (str, start, end) =>
   new TextDecoder(end).decode(
@@ -20,4 +20,7 @@ const reEncode = (str, start, end) =>
     }).encode(str)
   );
 
-export { reEncode };
+;
+
+
+module.exports.reEncode = reEncode
