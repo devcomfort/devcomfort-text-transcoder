@@ -1,7 +1,7 @@
 {
   "name": "@devcomfort/text-transcoder",
   "packageManager": "pnpm@7.14.2",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "license": "MIT",
   "main": "build/index.js",
   "module": "src/index.js",
