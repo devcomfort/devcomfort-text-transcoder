@@ -1,2 +1,3 @@
-declare module "@devcomfort/text-transcoder";
-declare function reEncode(str: string, start: string, end: string): string {}
+declare module "@devcomfort/text-transcoder" {
+  function reEncode(str: string, start: string, end: string): string;
+}
