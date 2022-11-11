@@ -3,12 +3,8 @@
   "packageManager": "pnpm@7.14.2",
   "version": "0.1.7",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "require": "./build/index.js",
-      "import": "./src/index.js"
-    }
-  },
+  "main": "build/index.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "alamode src -o build --noSourceMaps"
   },
@@ -29,6 +25,7 @@
     "converter"
   ],
   "dependencies": {
+    "@devcomfort/text-transcoder": "^0.1.7",
     "alamode": "^3.7.1",
     "text-decoding": "^1.0.0"
   }

@@ -1,14 +1,23 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@devcomfort/text-transcoder': ^0.1.7
   alamode: ^3.7.1
   text-decoding: ^1.0.0
 
 dependencies:
+  '@devcomfort/text-transcoder': 0.1.7
   alamode: 3.7.1
   text-decoding: 1.0.0
 
 packages:
+
+  /@devcomfort/text-transcoder/0.1.7:
+    resolution: {integrity: sha512-/qZAOtnvpOlQuLgUUWKL+bZePCkkgyAKw/2H7fE4c6QUWTz0pcsB1NNx+sQSuNyrKAnA3LBLLbnM7oYZE31Haw==}
+    dependencies:
+      alamode: 3.7.1
+      text-decoding: 1.0.0
+    dev: false
 
   /alamode/3.7.1:
     resolution: {integrity: sha512-Vy2w3qhjyDqwiy1sX0NzVgw7tc3vy/OAoBfV88EaS7PzI4Qo/uwpnhWmWBw38su3LdkBUJV2imRmJLScizf48A==}
