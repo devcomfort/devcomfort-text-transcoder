@@ -25,7 +25,6 @@
     "converter"
   ],
   "dependencies": {
-    "@devcomfort/text-transcoder": "^0.1.7",
     "alamode": "^3.7.1",
     "text-decoding": "^1.0.0"
   }
