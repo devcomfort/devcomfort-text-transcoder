@@ -7,7 +7,8 @@
   "module": "src/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "alamode src -o build --noSourceMaps"
+    "build": "alamode src -o build --noSourceMaps",
+    "test": "jest"
   },
   "author": {
     "name": "devcomfort",
@@ -28,5 +29,8 @@
   "dependencies": {
     "alamode": "^3.7.1",
     "text-decoding": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
