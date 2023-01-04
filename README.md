@@ -1,6 +1,6 @@
 # text-transcoder
 
-A wrapper from `iconv-lite` to change text encoding.
+A wrapper from `text-decoding` to change text encoding.
 
 ## Features
 
