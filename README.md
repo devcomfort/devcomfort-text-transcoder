@@ -5,6 +5,8 @@ A wrapper from `text-decoding` to change text encoding.
 ## Features
 
 - Capable of both `CommonJS` and `ESM`.
+- TypeScript support for type safety and better development experience.
+- Ava-based testing for fast and reliable tests.
 - (Not yet supported) `CDN` library supported.
 
 ## Install
@@ -17,6 +19,11 @@ yarn add @devcomfort/text-transcoder
 ```bash
 # npm
 npm i @devcomfort/text-transcoder
+```
+
+```bash
+# pnpm
+pnpm i @devcomfort/text-transcoder
 ```
 
 ## Usage

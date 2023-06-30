@@ -1,14 +1,14 @@
 {
   "name": "@devcomfort/text-transcoder",
-  "packageManager": "pnpm@7.14.2",
   "version": "0.1.14",
+  "type": "module",
   "license": "MIT",
-  "main": "build/index.js",
-  "module": "src/index.js",
-  "types": "index.d.ts",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "alamode src -o build --noSourceMaps",
-    "test": "jest"
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build": "pnpm build:cjs && pnpm build:esm",
+    "test": "tsc --project tsconfig.test.json && pnpm ava dist/test/index.test.js"
   },
   "author": {
     "name": "devcomfort",
@@ -27,10 +27,8 @@
     "converter"
   ],
   "dependencies": {
-    "alamode": "^3.7.1",
-    "text-decoding": "^1.0.0"
-  },
-  "devDependencies": {
-    "jest": "^29.3.1"
+    "ava": "^5.3.1",
+    "text-decoding": "^1.0.0",
+    "typescript": "^5.1.6"
   }
 }
