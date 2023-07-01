@@ -21,7 +21,9 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: text-transcoder
-          path: ./
+          path: |
+            ./
+            !node_modules
 
   test:
     # 빌드 이후 테스트하도록.
@@ -34,6 +36,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 7.14.2
+      - run: pnpm i
       - run: pnpm test
 
   publish-npm-registry:
