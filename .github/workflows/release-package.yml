@@ -54,9 +54,9 @@ jobs:
         with:
           version: 7.14.2
         # --no-git-checks: 작업 과정 중 제외 및 추가되는 파일이 발생하여 생기는 문제 무시합니다.
-      - run: npm publish --no-git-checks
-        env:
-          NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
   # publish-github-registry:
   #   runs-on: ubuntu-latest
   #   permissions:
