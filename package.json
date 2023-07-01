@@ -10,6 +10,10 @@
     "build": "pnpm build:cjs && pnpm build:esm",
     "test": "tsc --project tsconfig.test.json && pnpm ava dist/test/index.test.js"
   },
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
   "author": {
     "name": "devcomfort",
     "url": "https://github.com/devcomfort/text-transcoder"
