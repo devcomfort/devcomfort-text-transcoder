@@ -4,6 +4,9 @@ dependencies:
   text-decoding:
     specifier: ^1.0.0
     version: 1.0.0
+  typescript:
+    specifier: ^5.1.6
+    version: 5.1.6
 
 devDependencies:
   '@types/node':
@@ -12,9 +15,6 @@ devDependencies:
   ava:
     specifier: ^5.3.1
     version: 5.3.1
-  typescript:
-    specifier: ^5.1.6
-    version: 5.1.6
 
 packages:
 
@@ -865,7 +865,7 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
+    dev: false
 
   /well-known-symbols@2.0.0:
     resolution: {integrity: sha512-ZMjC3ho+KXo0BfJb7JgtQ5IBuvnShdlACNkKkdsqBmYw3bPAaJfPeYUo6tLUaT5tG/Gkh7xkpBhKRQ9e7pyg9Q==}
