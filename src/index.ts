@@ -1,4 +1,5 @@
-import { TextDecoder, TextEncoder, type EncodingLabel } from "text-decoding";
+import { TextDecoder, TextEncoder } from "text-decoding";
+import { EncodingLabel } from 'text-decoding';
 
 /**
  *
@@ -14,4 +15,5 @@ const reEncode = (str: string, start: EncodingLabel, end: EncodingLabel): string
     }).encode(str)
   );
 
+export default { reEncode };
 export { reEncode };
