@@ -55,6 +55,7 @@
     "text-decoding": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.3.3",
     "ava": "^5.3.1",
     "typescript": "^5.1.6"
   }
