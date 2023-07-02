@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https:/github.com/devcomfort/text-transcoder"
+    "url": "https://github.com/devcomfort/text-transcoder"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.com",
@@ -37,8 +37,10 @@
     "converter"
   ],
   "dependencies": {
+    "text-decoding": "^1.0.0"
+  },
+  "devDependencies": {
     "ava": "^5.3.1",
-    "text-decoding": "^1.0.0",
     "typescript": "^5.1.6"
   }
 }
