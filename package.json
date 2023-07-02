@@ -35,8 +35,21 @@
     "access": "public"
   },
   "keywords": [
-    "text",
-    "converter"
+    "text-transcoder",
+    "text-encoding",
+    "encoding-conversion",
+    "text-decoding",
+    "character-encoding",
+    "reencode",
+    "converter",
+    "transformation",
+    "encode",
+    "decode",
+    "charset",
+    "conversion",
+    "text-processing",
+    "string",
+    "format"
   ],
   "dependencies": {
     "text-decoding": "^1.0.0"
