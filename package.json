@@ -11,6 +11,9 @@
     "build": "pnpm build:cjs && pnpm build:esm",
     "test": "tsc --project tsconfig.test.json && pnpm ava dist/test/index.test.js"
   },
+  "files": [
+    "dist"
+  ],
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/cjs/index.js"
