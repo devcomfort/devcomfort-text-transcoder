@@ -1,6 +1,6 @@
 {
   "name": "@devcomfort/text-transcoder",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "type": "module",
   "license": "MIT",
   "main": "./src/index.js",
