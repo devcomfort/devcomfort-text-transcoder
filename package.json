@@ -13,7 +13,8 @@
     "test": "tsc --project tsconfig.test.json && pnpm ava dist/test/index.test.js"
   },
   "files": [
-    "dist"
+    "./dist",
+    "./tsconfig.base.json"
   ],
   "exports": {
     ".": {
