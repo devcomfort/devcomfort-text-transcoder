@@ -33,7 +33,6 @@
     "url": "https://github.com/devcomfort/text-transcoder"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "keywords": [
