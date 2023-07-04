@@ -13,13 +13,10 @@
     "test": "tsc --project tsconfig.test.json && pnpm ava dist/test/index.test.js"
   },
   "files": [
-    "./dist",
-    "./src/@types",
-    "./tsconfig.base.json"
+    "./dist"
   ],
   "exports": {
     ".": {
-      "default": "./dist/esm/index.js",
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
     },
@@ -56,6 +53,7 @@
   ],
   "dependencies": {
     "text-decoding": "^1.0.0",
+    "tslib": "^2.6.0",
     "typescript": "^5.1.6"
   },
   "devDependencies": {

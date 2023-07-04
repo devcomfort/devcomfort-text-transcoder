@@ -4,6 +4,9 @@ dependencies:
   text-decoding:
     specifier: ^1.0.0
     version: 1.0.0
+  tslib:
+    specifier: ^2.6.0
+    version: 2.6.0
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -855,6 +858,10 @@ packages:
     dependencies:
       is-number: 7.0.0
     dev: true
+
+  /tslib@2.6.0:
+    resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}
+    dev: false
 
   /type-fest@0.13.1:
     resolution: {integrity: sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg==}
