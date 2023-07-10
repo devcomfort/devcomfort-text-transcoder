@@ -30,7 +30,7 @@ pnpm i @devcomfort/text-transcoder
 
 ```javascript
 /** CommonJS */
-const reEncode = require("@devcomfort/text-transcoder/index.cjs");
+const reEncode = require("@devcomfort/text-transcoder");
 const str = "A";
 console.log(reEncode(str, "utf-8", "utf-8")); // A
 ```
