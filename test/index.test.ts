@@ -1,5 +1,5 @@
 import test, { ExecutionContext } from "ava";
-import { reEncode } from "./index.js";
+import { reEncode } from "../src/index.js";
 import { EncodingLabel } from "text-decoding";
 
 const encodingTestCases: {
