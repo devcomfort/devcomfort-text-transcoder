@@ -10,7 +10,9 @@
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build": "pnpm build:cjs && pnpm build:esm",
-    "test": "tsc --project tsconfig.test.json && pnpm ava dist/test/index.test.js"
+    "build:test": "tsc --project tsconfig.test.json",
+    "clean:test": "rimraf ./test/dist",
+    "test": "npm run clean:test && npm run build:test && pnpm ava test/dist/test/index.test.js"
   },
   "files": [
     "./dist"
@@ -53,6 +55,7 @@
     "format"
   ],
   "dependencies": {
+    "rimraf": "^5.0.1",
     "text-decoding": "^1.0.0",
     "tslib": "^2.6.0",
     "typescript": "^5.1.6"
