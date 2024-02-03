@@ -1,5 +1,5 @@
 import { TextDecoder, TextEncoder } from "text-decoding";
-import { EncodingLabel } from 'text-decoding';
+import { EncodingLabel } from "text-decoding";
 
 /**
  *
@@ -8,12 +8,15 @@ import { EncodingLabel } from 'text-decoding';
  * @param end 끝 인코딩
  * @returns {string}
  */
-const reEncode = (str: string, start: EncodingLabel, end: EncodingLabel): string =>
+export const reEncode = (
+  str: string,
+  start: EncodingLabel,
+  end: EncodingLabel
+): string =>
   new TextDecoder(end).decode(
     new TextEncoder(start, {
       NONSTANDARD_allowLegacyEncoding: true,
     }).encode(str)
   );
 
-export default { reEncode };
-export { reEncode };
+export default reEncode;
