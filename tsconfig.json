@@ -98,7 +98,7 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["./src", "./@types"],
+  "include": ["./src", "./@types/*.d.ts"],
   "exclude": [
     // node_modules에 저장된 라이브러리 파일 무시
     "./node_modules",
