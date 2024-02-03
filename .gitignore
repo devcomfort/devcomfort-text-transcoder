@@ -140,4 +140,8 @@ out
 .yarn/install-state.gz
 .pnp.*
 
+# 빌드 완료 파일
 dist
+
+# turborepo 캐시 파일
+.turbo
