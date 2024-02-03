@@ -6,13 +6,16 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
+  "packageManager": "pnpm@8.12.1",
   "scripts": {
+    "vitest": "vitest",
+    "turbo": "turbo",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build": "pnpm build:cjs && pnpm build:esm",
-    "build:test": "tsc --project tsconfig.test.json",
-    "clean:test": "rimraf ./test/dist",
-    "test": "npm run clean:test && npm run build:test && pnpm ava test/dist/test/index.test.js"
+    "clean": "rimraf ./dist",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "files": [
     "./dist"
@@ -38,30 +41,33 @@
     "access": "public"
   },
   "keywords": [
-    "text-transcoder",
-    "text-encoding",
-    "encoding-conversion",
-    "text-decoding",
-    "character-encoding",
-    "reencode",
-    "converter",
-    "transformation",
+    "transcode",
     "encode",
     "decode",
-    "charset",
-    "conversion",
-    "text-processing",
-    "string",
-    "format"
+    "text-encoding",
+    "character-encoding",
+    "text-transcoding",
+    "text-transformation",
+    "text-utility",
+    "string-encoding",
+    "buffer-encoding",
+    "reencode",
+    "recoding",
+    "nodejs-text",
+    "npm-text",
+    "javascript-text"
   ],
-  "dependencies": {
-    "rimraf": "^5.0.1",
-    "text-decoding": "^1.0.0",
-    "tslib": "^2.6.0",
-    "typescript": "^5.1.6"
-  },
   "devDependencies": {
     "@types/node": "^20.3.3",
-    "ava": "^5.3.1"
+    "@vitest/ui": "^1.2.2",
+    "rimraf": "^5.0.1",
+    "tslib": "^2.6.0",
+    "turbo": "^1.12.2",
+    "typescript": "^5.1.6",
+    "vitest": "^1.2.2",
+    "zod": "^3.22.4"
+  },
+  "dependencies": {
+    "text-decoding": "^1.0.0"
   }
 }
