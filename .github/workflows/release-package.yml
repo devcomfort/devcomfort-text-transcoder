@@ -15,9 +15,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - uses: pnpm/action-setup@v2
         with:
-          version: 7.14.2
+          version: 8.12.1
       - run: pnpm i
-      - run: pnpm build
+      - run: turbo run build
       - uses: actions/upload-artifact@v3
         with:
           name: text-transcoder
@@ -35,7 +35,7 @@ jobs:
           name: text-transcoder
       - uses: pnpm/action-setup@v2
         with:
-          version: 7.14.2
+          version: 8.12.1
       - run: pnpm i
       - run: pnpm test
 
