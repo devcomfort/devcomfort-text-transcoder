@@ -17,7 +17,7 @@ jobs:
         with:
           version: 8.12.1
       - run: pnpm i
-      - run: turbo run build
+      - run: pnpm turbo run build
       - uses: actions/upload-artifact@v3
         with:
           name: text-transcoder
