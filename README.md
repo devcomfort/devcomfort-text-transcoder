@@ -1,43 +1,34 @@
-# text-transcoder
+# @devcomfort/text-transcoder
 
-A wrapper from `text-decoding` to change text encoding.
+## Overview
+
+`@devcomfort/text-transcoder` is a light and efficient text encoding conversion library for Node.js. It offers straightforward functions to convert text between various encodings, including UTF-8, EUC-KR, EUC-JP, and others.
+
+The aim of this library is to provide a user-friendly API for managing text encodings in JavaScript applications. However, the test coverage is currently limited as this library was initially developed for personal use. We encourage contributions to enhance our test coverage! The existing test file can be found at `./src/index.test.ts`.
 
 ## Features
 
-- Capable of both `CommonJS` and `ESM`.
-- TypeScript support for type safety and better development experience.
-- Ava-based testing for fast and reliable tests.
-- (Not yet supported) `CDN` library supported.
+- Compatible with both `CommonJS(CJS)` and `ECMAScript(ESM)` imports
+- Comes with TypeScript definitions for type safety.
+- Testing conducted using Vitest (Addition of more test cases is welcomed!)
+- (Coming soon) Support for `CDN`.
 
-## Install
-
-```bash
-# yarn
-yarn add @devcomfort/text-transcoder
-```
+## Installation
 
 ```bash
-# npm
 npm i @devcomfort/text-transcoder
-```
-
-```bash
-# pnpm
-pnpm i @devcomfort/text-transcoder
+yarn add @devcomfort/text-transcoder
+pnpm add @devcomfort/text-transcoder
 ```
 
 ## Usage
 
-```javascript
-/** CommonJS */
+```typescript
+/** CommonJS(CJS) */
 const reEncode = require("@devcomfort/text-transcoder");
-const str = "A";
-console.log(reEncode(str, "utf-8", "utf-8")); // A
-```
+console.log(reEncode("ÀÚ", "windows-1252", "euc-kr")); // 자
 
-```javascript
-/** ESM */
+/** ECMAScript(ESM) */
 import reEncode from "@devcomfort/text-transcoder";
-const str = "A";
-console.log(reEncode(str, "utf-8", "utf-8")); // A
+console.log(reEncode("자", "euc-kr", "windows-1252")); // ÀÚ
 ```
