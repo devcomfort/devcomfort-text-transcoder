@@ -31,6 +31,11 @@ export default defineConfig([
           encoder: ["text-decoding"],
         },
       },
+      {
+        dir: "dist/umd",
+        format: "umd",
+        name: "textTranscoder",
+      },
     ],
     plugins: [
       clear({
