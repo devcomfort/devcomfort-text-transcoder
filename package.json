@@ -10,7 +10,6 @@
   "scripts": {
     "build": "rollup -c",
     "vitest": "vitest",
-    "turbo": "turbo",
     "test": "vitest",
     "test:ui": "vitest --ui"
   },
@@ -63,7 +62,6 @@
     "rollup-plugin-progress": "^1.1.2",
     "rollup-plugin-visualizer": "^5.12.0",
     "tslib": "^2.6.3",
-    "turbo": "^2.0.9",
     "typescript": "^5.5.4",
     "vitest": "^2.0.4",
     "zod": "^3.23.8"
