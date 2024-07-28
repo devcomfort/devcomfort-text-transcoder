@@ -32,6 +32,20 @@ const transcode = require("@devcomfort/text-transcoder");
 console.log(transcode("ÀÚ", "windows-1252", "euc-kr")); // 자
 
 /** ECMAScript(ESM) */
-import reEncode from "@devcomfort/text-transcoder";
-console.log(reEncode("자", "euc-kr", "windows-1252")); // ÀÚ
+import { transcode } from "@devcomfort/text-transcoder";
+// or
+import transcode from "@devcomfort/text-transcoder";
+console.log(transcode("자", "euc-kr", "windows-1252")); // ÀÚ
+```
+
+## CDN Usage
+
+```html
+<!-- default -->
+<script src="https://cdn.jsdelivr.net/npm/@devcomfort/text-transcoder/dist/umd/index.js"></script>
+<!-- with specific version -->
+<script src="https://cdn.jsdelivr.net/npm/@devcomfort/text-transcoder@1/dist/umd/index.js"></script>
+<script>
+  console.log(textTranscoder.transcode("ÀÚ", "windows-1252", "euc-kr")); // 자
+</script>
 ```
