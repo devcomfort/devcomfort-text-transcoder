@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { reEncode } from "./index";
-import { TEncoding } from "./schema";
+import { transcode } from "./transformer/transcode";
+import { TEncoding } from "./types";
 
 /**
  * **Test Case Specs:**
@@ -25,7 +25,7 @@ describe("encode/decode test ", function () {
     function (testCase) {
       const [rawText, encodedText, startEncoding, endEncoding] = testCase;
       it(`${startEncoding} -> ${endEncoding}`, function () {
-        const encoded = reEncode(rawText, startEncoding, endEncoding);
+        const encoded = transcode(rawText, startEncoding, endEncoding);
         expect(encoded.localeCompare(encodedText) === 0).toBeTruthy();
       });
     }
