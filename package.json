@@ -8,12 +8,9 @@
   "types": "./dist/index.d.ts",
   "packageManager": "pnpm@9.6.0",
   "scripts": {
+    "build": "rollup -c",
     "vitest": "vitest",
     "turbo": "turbo",
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:esm": "tsc --project tsconfig.esm.json",
-    "build": "pnpm build:cjs && pnpm build:esm",
-    "clean": "rimraf ./dist",
     "test": "vitest",
     "test:ui": "vitest --ui"
   },
@@ -30,7 +27,7 @@
   },
   "author": {
     "name": "devcomfort",
-    "email": "im@devcomfort.dev",
+    "email": "im@devcomfort.me",
     "url": "https://github.com/devcomfort/text-transcoder"
   },
   "repository": {
@@ -42,25 +39,29 @@
   },
   "keywords": [
     "transcode",
-    "encode",
-    "decode",
+    "transcoder",
     "text-encoding",
-    "character-encoding",
     "text-transcoding",
     "text-transformation",
     "text-utility",
     "string-encoding",
-    "buffer-encoding",
     "reencode",
-    "recoding",
-    "nodejs-text",
-    "npm-text",
-    "javascript-text"
+    "encode"
   ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-sucrase": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
     "@types/node": "^20.14.12",
+    "@vitest/coverage-istanbul": "^2.0.4",
     "@vitest/ui": "^2.0.4",
     "rimraf": "^6.0.1",
+    "rollup": "^4.19.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-visualizer": "^5.12.0",
     "tslib": "^2.6.3",
     "turbo": "^2.0.9",
     "typescript": "^5.5.4",
