@@ -30,7 +30,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: text-transcoder
       - uses: pnpm/action-setup@v2
@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: npm package
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: text-transcoder
       - uses: actions/setup-node@v3
