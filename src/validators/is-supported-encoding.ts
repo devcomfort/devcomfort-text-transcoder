@@ -1,5 +1,5 @@
 import { Encoding } from "../schemas";
-import { TEncoding } from "../types";
+import type { TEncoding } from "../types";
 
 /**
  * Checks if the given string is a supported encoding
@@ -16,7 +16,7 @@ import { TEncoding } from "../types";
  * isSupportedEncoding("invalid-encoding") // returns false
  */
 function isSupportedEncoding(text: string): text is TEncoding {
-  return Encoding.safeParse(text).success;
+	return Encoding.safeParse(text).success;
 }
 
 export { isSupportedEncoding, isSupportedEncoding as default };

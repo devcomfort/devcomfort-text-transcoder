@@ -1,5 +1,5 @@
-import { z } from "zod";
-import { Encoding } from "../schemas/encoding";
+import type { z } from "zod";
+import type { Encoding } from "../schemas/encoding";
 
 /**
  * ### Typoe of text encodings supported by the `text-decoding` library
